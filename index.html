@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidrah Ijaz | Professional & Interactive Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tab-btn.active {
+            background-color: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.08) 0%, rgba(248, 250, 252, 1) 90%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-blue-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white font-extrabold flex items-center justify-center text-xl shadow-lg shadow-blue-500/30">
+                        SI
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-slate-900 tracking-tight">Sidrah Ijaz</h1>
+                        <p class="text-xs font-medium text-blue-600">CS Lecturer & Lead Data Analyst</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                    <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                    <a href="#competencies" class="hover:text-blue-600 transition-colors">Competencies</a>
+                    <a href="#projects" class="hover:text-blue-600 transition-colors">Interactive Projects</a>
+                    <a href="#code" class="hover:text-blue-600 transition-colors">Code Lab</a>
+                    <a href="#contact" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium shadow-md shadow-blue-600/20 transition-all transform hover:-translate-y-0.5">Contact Me</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Profile Intro -->
+    <section id="about" class="py-16 lg:py-24 hero-gradient border-b border-slate-200/60 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-4xl mx-auto text-center space-y-6">
+                <span class="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100/80 rounded-full border border-blue-200">
+                    <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span> Professional Profile
+                </span>
+                
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    Driving Decisions & Innovation Through <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Data Excellence</span>
+                </h2>
+                
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-slate-200/80 shadow-xl shadow-slate-200/50 text-slate-700 text-base sm:text-lg leading-relaxed text-left space-y-4">
+                    <p>
+                        A confident and reliable data analyst. I have a proven track record of data to design business design and strategy. I have expertise in collecting, analysing, and interpreting large datasets, using statistical methods and software tools to identify trends, patterns, and insights.
+                    </p>
+                    <p>
+                        I am skilled in data visualization and report creation, communicating complex data in a clear and concise manner to stakeholders and decision makers within the organization. My excellent analytical and problem-solving skills, coupled with my attention to detail and ability to work well under pressure, make me a valuable asset to any data-driven organization.
+                    </p>
+                    <p class="font-medium text-slate-900">
+                        With a strong focus on achieving results, I am always looking for new challenges to further develop my skills and expertise. I am seeking to elevate my successful career with a progressive and ambitious company.
+                    </p>
+                </div>
+
+                <!-- Skill Badges -->
+                <div class="pt-4 flex flex-wrap justify-center gap-2">
+                    <span class="bg-white border border-slate-200 shadow-sm text-slate-700 text-xs px-3.5 py-1.5 rounded-xl font-medium">Python</span>
+                    <span class="bg-white border border-slate-200 shadow-sm text-slate-700 text-xs px-3.5 py-1.5 rounded-xl font-medium">R Studio</span>
+                    <span class="bg-white border border-slate-200 shadow-sm text-slate-700 text-xs px-3.5 py-1.5 rounded-xl font-medium">SQL</span>
+                    <span class="bg-white border border-slate-200 shadow-sm text-slate-700 text-xs px-3.5 py-1.5 rounded-xl font-medium">Machine Learning</span>
+                    <span class="bg-white border border-slate-200 shadow-sm text-slate-700 text-xs px-3.5 py-1.5 rounded-xl font-medium">NLP</span>
+                    <span class="bg-white border border-slate-200 shadow-sm text-slate-700 text-xs px-3.5 py-1.5 rounded-xl font-medium">Power BI</span>
+                    <span class="bg-white border border-slate-200 shadow-sm text-slate-700 text-xs px-3.5 py-1.5 rounded-xl font-medium">Tableau</span>
+                    <span class="bg-white border border-slate-200 shadow-sm text-slate-700 text-xs px-3.5 py-1.5 rounded-xl font-medium">Statistical Modeling</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencies & Capabilities Section -->
+    <section id="competencies" class="py-16 bg-white border-b border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Core Competencies & Proficiency</h2>
+                <p class="text-sm text-slate-500 mt-2">A balanced blend of analytical skill, technical mastery, and strategic vision</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill Card 1 -->
+                <div class="p-6 bg-slate-50 border border-slate-200/80 rounded-2xl hover:shadow-lg transition-all">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Data Analytics & BI</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">Transforming raw data into clear, actionable business strategies through interactive dashboards.</p>
+                    <div class="w-full bg-slate-200 rounded-full h-2">
+                        <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="p-6 bg-slate-50 border border-slate-200/80 rounded-2xl hover:shadow-lg transition-all">
+                    <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Machine Learning & NLP</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">Building predictive models, sentiment analysis pipelines, and classification algorithms.</p>
+                    <div class="w-full bg-slate-200 rounded-full h-2">
+                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="p-6 bg-slate-50 border border-slate-200/80 rounded-2xl hover:shadow-lg transition-all">
+                    <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Problem Solving & Strategy</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">Applying rigorous analytical methods to solve complex operational and decision-making problems.</p>
+                    <div class="w-full bg-slate-200 rounded-full h-2">
+                        <div class="bg-emerald-600 h-2 rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="p-6 bg-slate-50 border border-slate-200/80 rounded-2xl hover:shadow-lg transition-all">
+                    <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Academic Leadership</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">Lecturing, research supervision, and conveying technical ideas to diverse audiences.</p>
+                    <div class="w-full bg-slate-200 rounded-full h-2">
+                        <div class="bg-purple-600 h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Case Studies Section -->
+    <section id="projects" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Case Studies</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Featured Projects & Data Visualizations</h2>
+            </div>
+            <!-- Dynamic Navigation Tabs -->
+            <div class="flex bg-slate-200/60 p-1.5 rounded-2xl space-x-1 mt-6 md:mt-0 text-xs font-bold">
+                <button onclick="switchTab('p1')" id="tab-p1" class="tab-btn active px-4 py-2.5 rounded-xl transition-all">Airline Sentiment</button>
+                <button onclick="switchTab('p2')" id="tab-p2" class="tab-btn px-4 py-2.5 rounded-xl transition-all text-slate-600 hover:text-slate-900">Vehicle Inspection</button>
+                <button onclick="switchTab('p3')" id="tab-p3" class="tab-btn px-4 py-2.5 rounded-xl transition-all text-slate-600 hover:text-slate-900">Benefit Benchmarking</button>
+            </div>
+        </div>
+
+        <!-- Project 1: Airline Sentiment Analysis -->
+        <div id="content-p1" class="project-content grid grid-cols-1 lg:grid-cols-12 gap-8 bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/40">
+            <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+                <div>
+                    <span class="px-3 py-1 text-xs font-bold uppercase tracking-wide text-blue-700 bg-blue-50 rounded-lg">Machine Learning & NLP</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-3">Sentiment Analysis on Airline Tweets</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mt-3">
+                        Utilized R Studio to analyze over 14,000 customer tweets across six major airlines. Implemented text preprocessing and machine learning algorithms to uncover key drivers of customer dissatisfaction.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                    <div>
+                        <span class="text-xs text-slate-400 block font-medium">Model Accuracy</span>
+                        <span class="text-2xl font-extrabold text-emerald-600">88%</span>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 block font-medium">Model Lift</span>
+                        <span class="text-2xl font-extrabold text-blue-600">+34%</span>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50/60 p-4 rounded-2xl border border-blue-100">
+                    <h4 class="text-xs font-bold text-blue-900 uppercase tracking-wider mb-1">Strategic Insight</h4>
+                    <p class="text-xs text-blue-800 leading-relaxed">
+                        Flight delays and poor customer service responses accounted for over 65% of all negative sentiment feedback.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-7 bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                <div class="flex justify-between items-center mb-4">
+                    <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Complaint Classification Breakdown</h4>
+                    <span class="text-xs font-mono text-slate-400">Sample: 14,000 Reviews</span>
+                </div>
+                <div class="relative h-72 w-full">
+                    <canvas id="chartSentiment"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Vehicle Inspection Analytics -->
+        <div id="content-p2" class="project-content hidden grid grid-cols-1 lg:grid-cols-12 gap-8 bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/40">
+            <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+                <div>
+                    <span class="px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 bg-emerald-50 rounded-lg">Data Mining & Regex</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-3">Vehicle Inspection Environmental Impact</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mt-3">
+                        Utilized Python and Regular Expressions (Regex) to parse unstructured inspection descriptions across provincial data sources, compiling a comprehensive environmental report.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                    <div>
+                        <span class="text-xs text-slate-400 block font-medium">Primary Tech</span>
+                        <span class="text-lg font-bold text-slate-800">Python / Pandas</span>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 block font-medium">Extraction Method</span>
+                        <span class="text-lg font-bold text-slate-800">Regex Parsing</span>
+                    </div>
+                </div>
+
+                <div class="bg-emerald-50/60 p-4 rounded-2xl border border-emerald-100">
+                    <h4 class="text-xs font-bold text-emerald-900 uppercase tracking-wider mb-1">Strategic Insight</h4>
+                    <p class="text-xs text-emerald-800 leading-relaxed">
+                        Highlighted high-emission regions to enable targeted regulatory enforcement and localized policy updates.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-7 bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                <div class="flex justify-between items-center mb-4">
+                    <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Compliance & Failure Categorization</h4>
+                    <span class="text-xs font-mono text-slate-400">Provincial Analytics</span>
+                </div>
+                <div class="relative h-72 w-full">
+                    <canvas id="chartVehicle"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Employee Benefits Dashboard -->
+        <div id="content-p3" class="project-content hidden grid grid-cols-1 lg:grid-cols-12 gap-8 bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/40">
+            <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+                <div>
+                    <span class="px-3 py-1 text-xs font-bold uppercase tracking-wide text-purple-700 bg-purple-50 rounded-lg">Power BI & DAX</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-3">Employee Benefits Benchmarking Dashboard</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mt-3">
+                        Developed an interactive Power BI dashboard featuring DAX metrics to enable corporate stakeholders to compare complex employee compensation structures effortlessly.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                    <div>
+                        <span class="text-xs text-slate-400 block font-medium">Dashboard Tool</span>
+                        <span class="text-lg font-bold text-slate-800">Power BI</span>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 block font-medium">Logic Engine</span>
+                        <span class="text-lg font-bold text-slate-800">Advanced DAX</span>
+                    </div>
+                </div>
+
+                <div class="bg-purple-50/60 p-4 rounded-2xl border border-purple-100">
+                    <h4 class="text-xs font-bold text-purple-900 uppercase tracking-wider mb-1">Strategic Insight</h4>
+                    <p class="text-xs text-purple-800 leading-relaxed">
+                        Transformed static spreadsheet reports into dynamic visual tools, accelerating stakeholder decision-making cycles.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-7 bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                <div class="flex justify-between items-center mb-4">
+                    <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Benchmarking Metric Scores</h4>
+                    <span class="text-xs font-mono text-slate-400">Multi-Variable Analysis</span>
+                </div>
+                <div class="relative h-72 w-full">
+                    <canvas id="chartBenefits"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Code Showcase -->
+    <section id="code" class="py-16 bg-slate-950 text-slate-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Code Sandbox</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-1">Technical Implementation Snippets</h2>
+                </div>
+                <p class="text-xs font-mono text-slate-400 mt-2 md:mt-0">Production-ready scripts for analytics & modeling</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Code Box 1 -->
+                <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 shadow-2xl">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-xs font-mono bg-blue-950 text-blue-300 px-3 py-1 rounded-lg border border-blue-800">R Studio | Sentiment Model</span>
+                        <span class="text-xs text-slate-500 font-mono">NLP Pipeline</span>
+                    </div>
+                    <pre class="text-xs font-mono text-emerald-400 bg-slate-950 p-4 rounded-xl overflow-x-auto border border-slate-800/80 leading-relaxed"><code># Text Preprocessing & Cleaning
+library(tm)
+library(caret)
+
+corpus <- Corpus(VectorSource(tweets$text))
+corpus <- tm_map(corpus, content_transformer(tolower))
+corpus <- tm_map(corpus, removePunctuation)
+corpus <- tm_map(corpus, removeWords, stopwords("english"))
+
+# Term Document Matrix Construction
+dtm <- DocumentTermMatrix(corpus)
+dtm_sparse <- removeSparseTerms(dtm, 0.98)
+
+# Regression Model Training
+set.seed(123)
+train_idx <- createDataPartition(tweets$sentiment, p=0.8, list=FALSE)
+model <- train(sentiment ~ ., data=dtm_sparse[train_idx,], method="glm")
+
+# Model Accuracy Evaluation (88% Achieved)
+predictions <- predict(model, dtm_sparse[-train_idx,])
+confusionMatrix(predictions, test_data$sentiment)</code></pre>
+                </div>
+
+                <!-- Code Box 2 -->
+                <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 shadow-2xl">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-xs font-mono bg-emerald-950 text-emerald-300 px-3 py-1 rounded-lg border border-emerald-800">Python | Regex Log Parser</span>
+                        <span class="text-xs text-slate-500 font-mono">Data Mining</span>
+                    </div>
+                    <pre class="text-xs font-mono text-emerald-400 bg-slate-950 p-4 rounded-xl overflow-x-auto border border-slate-800/80 leading-relaxed"><code>import re
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Parsing unstructured vehicle logs using Regex
+def extract_emission_metrics(log_entry):
+    pattern = r"CO2:\s*(?P<co2>\d+\.\d+)\s*ppm|Status:\s*(?P<status>\w+)"
+    match = re.search(pattern, log_entry)
+    return match.groupdict() if match else None
+
+# Aggregating provincial inspection data
+df['parsed'] = df['inspection_log'].apply(extract_emission_metrics)
+summary = df.groupby('province')['emission_status'].value_counts(normalize=True)
+
+# Visual Output Generation
+summary.unstack().plot(kind='bar', stacked=True)
+plt.title("Provincial Vehicle Emission Compliance Rate")
+plt.show()</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Contact -->
+    <footer id="contact" class="bg-white border-t border-slate-200/80 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Sidrah Ijaz</h3>
+                    <p class="text-xs text-slate-500 mt-1">Data Analyst & Computer Science Educator</p>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-slate-600 font-medium">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-blue-600"></i> Attock, Pakistan</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-blue-600"></i> engr.sidrahijaz@gmail.com</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-phone text-blue-600"></i> (+92) 3129966964</span>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-400">
+                © Interactive Portfolio — Sidrah Ijaz. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.project-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(el => {
+                el.classList.remove('active');
+                el.classList.add('text-slate-600');
+            });
+            
+            document.getElementById('content-' + tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('tab-' + tabId);
+            activeBtn.classList.add('active');
+            activeBtn.classList.remove('text-slate-600');
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sentiment Chart
+            new Chart(document.getElementById('chartSentiment'), {
+                type: 'bar',
+                data: {
+                    labels: ['Late Flight', 'Customer Service', 'Lost Luggage', 'Booking Issues', 'Cabin Service'],
+                    datasets: [{
+                        label: 'Complaint Frequency',
+                        data: [4200, 3100, 2200, 1500, 800],
+                        backgroundColor: '#3b82f6',
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: { y: { grid: { borderDash: [4, 4] } }, x: { grid: { display: false } } }
+                }
+            });
+
+            // Vehicle Inspection Chart
+            new Chart(document.getElementById('chartVehicle'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Passed Standard', 'Failed Emission', 'Structural Defect', 'Minor Advisory'],
+                    datasets: [{
+                        data: [62, 18, 12, 8],
+                        backgroundColor: ['#10b981', '#ef4444', '#f59e0b', '#64748b'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'bottom' } }
+                }
+            });
+
+            // Benefits Radar Chart
+            new Chart(document.getElementById('chartBenefits'), {
+                type: 'radar',
+                data: {
+                    labels: ['Health Care', 'Retirement', 'Paid Leave', 'Remote Allowance', 'Growth'],
+                    datasets: [
+                        {
+                            label: 'Package Score',
+                            data: [80, 70, 60, 50, 75],
+                            borderColor: '#8b5cf6',
+                            backgroundColor: 'rgba(139, 92, 246, 0.25)'
+                        },
+                        {
+                            label: 'Industry Benchmark',
+                            data: [85, 80, 75, 70, 85],
+                            borderColor: '#3b82f6',
+                            backgroundColor: 'rgba(59, 130, 246, 0.25)'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        });
+    </script>
+</body>
+</html>
